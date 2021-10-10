@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Storages</h1>
+    <h1>Local Storages</h1>
+    <h1>Session Storages</h1>
+    <h1>Cookies</h1>
+    <script>
+// local storage
+        localStorage.setItem("name", "Stark");
+        console.log(localStorage.getItem("name"))
+
+        localStorage.removeItem('name');
+
+//sessionStorage
+        sessionStorage.setItem("name", "John");
+        console.log(sessionStorage.getItem("name"))
+
+//cookieStorage
+        document.cookie = "name= Ark; expires= " + new Date(2022, 0, 1)
+        .toUTCString();
+
+        document.cookie = "Last Name= Smith; expires= " + new Date(2022, 0, 1)
+        .toUTCString();
+
+        console.log(document.cookie);
+    </script>
+</body>
+</html>
